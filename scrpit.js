@@ -1,15 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("loginForm").addEventListener("submit", function(event) {
-        event.preventDefault();
+document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
 
-        let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
+    const senha = document.getElementById("senha").value;
+    const confirmarSenha = document.getElementById("confirmarSenha").value;
 
-        if (email === "admin@tremfacil.com" && password === "admin123") {
-            alert("Login bem-sucedido!");
-            window.location.href = "dashboard_admin.html"; 
-        } else {
-            alert("E-mail ou senha incorretos.");
-        }
-    });
+    if (senha !== confirmarSenha) {
+        alert("As senhas não coincidem!");
+        return;
+    }
+
+    alert("Cadastro realizado com sucesso!");
 });
