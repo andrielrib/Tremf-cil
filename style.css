@@ -1,46 +1,83 @@
-
-body {
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo com fundo degradê aprimorado */
+body {
     height: 100vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #4A90E2, #007AFF);
-    font-family: Arial, sans-serif;
-    position: relative;
+    background: linear-gradient(135deg, #0033A0, #007AFF, #4A90E2);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
 }
 
+/* Animação para o fundo */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container para centralizar a caixa de login */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Caixa de login aprimorada */
 .login-box {
-    width: 300px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-right: 50px;
+    width: 320px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
     text-align: center;
+    backdrop-filter: blur(10px);
 }
 
+/* Estilização do título */
 .login-box h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #004080;
+    font-size: 22px;
 }
 
+/* Estilização dos botões */
 .login-box button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
 }
 
+/* Botão do cliente */
 .client-btn {
-    background-color: #007AFF;
+    background: #007AFF;
     color: white;
 }
 
+.client-btn:hover {
+    background: #005bb5;
+}
+
+/* Botão do administrador */
 .admin-btn {
-    background-color: #4A90E2;
+    background: #0046B5;
     color: white;
-}   
+}
+
+.admin-btn:hover {
+    background: #002c80;
+}
