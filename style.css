@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(to bottom, #4A90E2, #007AFF);
+    font-family: Arial, sans-serif;
+    position: relative;
+}
+
+.login-box {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-right: 50px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.client-btn {
+    background-color: #007AFF;
+    color: white;
+}
+
+.admin-btn {
+    background-color: #4A90E2;
+    color: white;
+}   

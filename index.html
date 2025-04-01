@@ -1,25 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trem Fácil - Login</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Trem Fácil</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="scrpit.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="logo">
-            <img src="trem bala.png" alt="Trem Fácil">
-        </div>
-        <h2>Bem vindo de volta!</h2>
-        <form>
-            <input type="text" class="input-field" placeholder="Email ou telefone">
-            <input type="password" class="input-field" placeholder="Senha">
-            <button type="submit" class="button">ENTRAR</button>
-        </form>
-        <div class="forgot">
-            Esqueceu sua senha? <a href="#">Clique Aqui</a>
-        </div>
+    <div class="login-box">
+        <h2>Escolha seu tipo de login</h2>
+        <button class="client-btn" onclick="window.location.href='login_cliente.html'"> Cliente</button>
+        <button class="admin-btn" onclick="window.location.href='login_admin.html'"> Administrador</button>
     </div>
+</body>
+</html>
+
+
 </body>
 </html>
